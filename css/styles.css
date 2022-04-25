@@ -161,14 +161,28 @@ img:hover {
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  cursor: pointer;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  cursor: pointer;
+  filter: brightness(50%);
 }
 
 /* ================================== */

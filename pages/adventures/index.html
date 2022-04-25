@@ -4,28 +4,225 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QTrip Adventures</title>
-    <link rel="stylesheet" href="../../css/styles.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="../../css/styles.css" />
   </head>
 
   <body>
     <!-- TODO: MODULE_ADVENTURES_GRID -->
     <!-- 1. Copy navigation bar HTML from Landing page document -->
+    <nav
+      class="navbar navbar-expand-xs navbar-expand-sm navbar-expand-lg navbar-expand-xl navbar-light bg-light"
+    >
+      <a class="navbar-brand ms-3" href="#">QTrip</a>
+      <button
+        class="navbar-toggler me-3"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/adventures/index.html">Explore</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <div class="container">
       <div class="content">
         <!-- TODO: MODULE_ADVENTURES_GRID -->
         <!-- 1. Create the grid of adventures by adding child elements as required. -->
+
+        <h4>Explore all adventures</h4>
+        <p>Here is a list of adventures that you can explore in city</p>
+
+        <div class="row">
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="/pages/adventures/resort/index.html">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/resort.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Resort</h5>
+                    <p class="mb-0">&#x20B9;1,200</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/tower.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5 class="text-left">Tower</h5>
+                    <p class="mb-0">&#x20B9;1,800</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/market.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Market</h5>
+                    <p class="mb-0">&#x20B9;1,900</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/university.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>University</h5>
+                    <p class="mb-0">&#x20B9;2,100</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/huts.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Huts</h5>
+                    <p class="mb-0">&#x20B9;800</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/mount.jpg"
+                  class="img-responsive img-fluid"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Mount</h5>
+                    <p class="mb-0">&#x20B9;900</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card" id="adventures">
+                <img
+                  src="/assets/adventures/elephant.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Elephant</h5>
+                    <p class="mb-0">&#x20B9;5,000</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-6 col-lg-3 mb-4">
+            <a href="#">
+              <div class="adventure-card">
+                <img
+                  src="/assets/adventures/canopy.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="adventure-card-text text-md-center w-100">
+                  <div
+                    class="d-block d-md-flex justify-content-between flex-wrap my-2 mx-3"
+                  >
+                    <h5>Canopy</h5>
+                    <p class="mb-0">&#x20B9;1,000</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
-      <div class="container">© QTrip 2020</div>
+      <div class="container">© QTrip 2022</div>
     </footer>
 
     <script
