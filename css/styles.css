@@ -11,14 +11,17 @@ body {
   overflow-y: auto;
   min-height: 100vh;
 }
+
 textarea:focus,
 input:focus {
   outline: none;
 }
+
 a {
   color: inherit !important;
   text-decoration: none !important;
 }
+
 footer {
   background: #f1f1f1;
   width: 100%;
@@ -136,6 +139,7 @@ img:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .hero-subheading {
@@ -192,25 +196,74 @@ img:hover {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width: 400px;
+}
+
+.adventure-detail-card h5 {
+  text-align: left;
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  display: block;
+  height: auto;
+  width: 100%;
+  opacity: 100%;
+
+  -webkit-transition: 0.2s all; /* Safari and Chrome */
+  -moz-transition: 0.2s all; /* Firefox */
+  -ms-transition: 0.2s all; /* IE 9 */
+  -o-transition: 0.2s all; /* Opera */
+  transition: 0.2s all;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  cursor: pointer;
+  filter: brightness(40%);
 }
+
+.div_border {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.adventure-card-text {
+  position: relative;
+  border: 1px solid #eee;
+  padding: 7px;
+  border-radius: 4px;
+}
+
 .experience-content ul li {
-  margin-left: 16px;
+  margin-left: -10px;
   padding: 0;
 }
 
-@media only screen and (min-width: 768px) {
+li_style li {
+  list-style-position: inside;
+}
+
+hr {
+  border-bottom: 1px solid #eee;
+}
+
+hr {
+  border: none;
+}
+
+@media only screen and (min-width: 1366px) {
   /* For desktops phones: */
   #reservation {
     width: 400px;
     position: fixed;
+  }
+
+  @media (max-width: 667px) {
+    #adventures {
+      height: 250px;
+    }
   }
 }

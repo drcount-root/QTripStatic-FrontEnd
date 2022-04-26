@@ -17,15 +17,154 @@
     <!-- TODO: MODULE_ADVENTURE_DETAILS -->
     <!-- 1. Copy navigation bar HTML from Landing page document -->
 
+    <nav
+      class="navbar navbar-expand-xs navbar-expand-sm navbar-expand-lg navbar-expand-xl navbar-light bg-light"
+    >
+      <a class="navbar-brand ms-3" href="/index.html">QTrip</a>
+      <button
+        class="navbar-toggler me-3"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav ms-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/adventures/index.html">Explore</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="content">
         <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
         <!-- 1. Write the child elements as required. -->
         <!-- 2. Remember to use .adventure-card and its related classes. -->
+
+        <div class="row">
+          <div class="col-md-8 col-lg-8 mb-3">
+            <div class="div_border">
+              <div class="row">
+                <div class="col-md-8 d-flex">
+                  <img
+                    class="d-image img-fluid adventure-card-image mb-3"
+                    src="/assets/adventures/resort/resort1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="col-md-4 d-none d-lg-block d-md-block">
+                  <img
+                    class="img-fluid adventure-card-image mb-3"
+                    src="/assets/adventures/resort/resort2.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="img-fluid adventure-card-image mb-3"
+                    src="/assets/adventures/resort/resort3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <h2>Sunshine Resort</h2>
+              <p class="text-muted">Relax and Unwind yourself</p>
+              <hr class="hr-style" />
+
+              <h5>About the Experience</h5>
+
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+
+              <div class="experience-content">
+                <p>Inclusions</p>
+
+                <ul>
+                  <li>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </li>
+                  <li>
+                    Donec non tortor efficitur, posuere justo ut, fringilla
+                    tellus.
+                  </li>
+                  <li>Ut et turpis a metus dictum lobortis et a libero.</li>
+                  <li>Aenean non eros volutpat sem facilisis fringilla.</li>
+                </ul>
+              </div>
+
+              <div class="experience-content">
+                <p>know before you go</p>
+
+                <ul>
+                  <li>
+                    Mauris imperdiet orci nec massa varius, ut aliquam mi
+                    gravida.
+                  </li>
+                  <li>
+                    Integer blandit nisi volutpat nisl vulputate, dignissim
+                    pellentesque magna euismod.
+                  </li>
+                  <li>
+                    Donec vitae dui imperdiet, scelerisque erat et, pellentesque
+                    urna.
+                  </li>
+                  <li>
+                    Quisque aliquam orci luctus ipsum vulputate venenatis vel
+                    nec ex.
+                  </li>
+                  <li>Nam bibendum magna quis ex rutrum viverra.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="col-md-8 col-lg-8">
+ 
+             </div>-->
+
+          <div class="col-md-4 col-lg-4">
+            <div class="adventure-card-text" id="reservation">
+              <h3 class="card-title">Sold Out!</h3>
+              <hr />
+              <p class="card-text">
+                The adventure is currently sold out. But there is a lot to
+                <a href="../">
+                  <span style="color: #ffa500"> explore. </span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <footer>
-      <div class="container">© QTrip 2020</div>
+      <div class="container">© QTrip 2022</div>
     </footer>
 
     <script
